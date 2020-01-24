@@ -1,0 +1,86 @@
+{
+    "__jsonqualname__": "rafcon.core.states.library_state.LibraryState", 
+    "input_data_port_runtime_values": {
+        "0": null, 
+        "2": 20, 
+        "3": 300
+    }, 
+    "library_name": "rtl_move_base", 
+    "library_path": "rtl_rafcon_lib/navigation", 
+    "name": "rtl move base", 
+    "outcomes": {
+        "-2": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "preempted", 
+            "outcome_id": -2
+        }, 
+        "-1": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "aborted", 
+            "outcome_id": -1
+        }, 
+        "0": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "PENDING", 
+            "outcome_id": 0
+        }, 
+        "1": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "ACTIVE", 
+            "outcome_id": 1
+        }, 
+        "2": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "PREEMPTED", 
+            "outcome_id": 2
+        }, 
+        "3": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "SUCCEEDED", 
+            "outcome_id": 3
+        }, 
+        "4": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "ABORTED", 
+            "outcome_id": 4
+        }, 
+        "5": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "REJECTED", 
+            "outcome_id": 5
+        }, 
+        "6": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "PREEMPTING", 
+            "outcome_id": 6
+        }, 
+        "7": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "RECALLING", 
+            "outcome_id": 7
+        }, 
+        "8": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "RECALLED", 
+            "outcome_id": 8
+        }, 
+        "9": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "LOST", 
+            "outcome_id": 9
+        }
+    }, 
+    "output_data_port_runtime_values": {
+        "1": null
+    }, 
+    "state_id": "AZGRPE", 
+    "use_runtime_value_input_data_ports": {
+        "0": true, 
+        "2": true, 
+        "3": true
+    }, 
+    "use_runtime_value_output_data_ports": {
+        "1": true
+    }, 
+    "version": "0.1"
+}

@@ -1,0 +1,216 @@
+{
+    "__jsonqualname__": "rafcon.core.states.hierarchy_state.HierarchyState", 
+    "data_flows": {
+        "17": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_flow.DataFlow", 
+            "data_flow_id": 17, 
+            "from_key": 0, 
+            "from_state": "DXKABI", 
+            "to_key": 0, 
+            "to_state": "DNKPSO"
+        }
+    }, 
+    "description": null, 
+    "income": {
+        "__jsonqualname__": "rafcon.core.state_elements.logical_port.Income"
+    }, 
+    "input_data_ports": {
+        "0": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_port.InputDataPort", 
+            "data_port_id": 0, 
+            "data_type": {
+                "__type__": "__builtin__.bool"
+            }, 
+            "default_value": true, 
+            "name": "withWaveDetection"
+        }
+    }, 
+    "name": "FollowMe", 
+    "outcomes": {
+        "-2": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "preempted", 
+            "outcome_id": -2
+        }, 
+        "-1": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "aborted", 
+            "outcome_id": -1
+        }, 
+        "0": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "success", 
+            "outcome_id": 0
+        }, 
+        "1": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "personLost", 
+            "outcome_id": 1
+        }
+    }, 
+    "output_data_ports": {}, 
+    "scoped_variables": {}, 
+    "state_id": "DXKABI", 
+    "transitions": {
+        "1": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 1, 
+            "from_state": "GWWQXH", 
+            "to_outcome": null, 
+            "to_state": "XETFSK", 
+            "transition_id": 1
+        }, 
+        "2": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "XETFSK", 
+            "to_outcome": null, 
+            "to_state": "GXTGPF", 
+            "transition_id": 2
+        }, 
+        "4": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "FEJJRX", 
+            "to_outcome": null, 
+            "to_state": "BWRLHY", 
+            "transition_id": 4
+        }, 
+        "6": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": null, 
+            "from_state": null, 
+            "to_outcome": null, 
+            "to_state": "TXCEVX", 
+            "transition_id": 6
+        }, 
+        "8": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "BWRLHY", 
+            "to_outcome": null, 
+            "to_state": "IDZFER", 
+            "transition_id": 8
+        }, 
+        "9": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "IDZFER", 
+            "to_outcome": null, 
+            "to_state": "GXTGPF", 
+            "transition_id": 9
+        }, 
+        "11": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "TXCEVX", 
+            "to_outcome": null, 
+            "to_state": "FEJJRX", 
+            "transition_id": 11
+        }, 
+        "12": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 1, 
+            "from_state": "TXCEVX", 
+            "to_outcome": null, 
+            "to_state": "TXCEVX", 
+            "transition_id": 12
+        }, 
+        "14": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "GWWQXH", 
+            "to_outcome": null, 
+            "to_state": "PUZONL", 
+            "transition_id": 14
+        }, 
+        "15": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "PUZONL", 
+            "to_outcome": null, 
+            "to_state": "CSUIBP", 
+            "transition_id": 15
+        }, 
+        "16": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 1, 
+            "from_state": "PROWTB", 
+            "to_outcome": null, 
+            "to_state": "GWWQXH", 
+            "transition_id": 16
+        }, 
+        "17": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "GXTGPF", 
+            "to_outcome": null, 
+            "to_state": "PROWTB", 
+            "transition_id": 17
+        }, 
+        "22": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "CSUIBP", 
+            "to_outcome": 0, 
+            "to_state": "DXKABI", 
+            "transition_id": 22
+        }, 
+        "42": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "PROWTB", 
+            "to_outcome": null, 
+            "to_state": "DNKPSO", 
+            "transition_id": 42
+        }, 
+        "43": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "DNKPSO", 
+            "to_outcome": null, 
+            "to_state": "HQBJLK", 
+            "transition_id": 43
+        }, 
+        "44": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "HQBJLK", 
+            "to_outcome": null, 
+            "to_state": "GXTGPF", 
+            "transition_id": 44
+        }, 
+        "45": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 1, 
+            "from_state": "DNKPSO", 
+            "to_outcome": null, 
+            "to_state": "APAZLI", 
+            "transition_id": 45
+        }, 
+        "46": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "APAZLI", 
+            "to_outcome": null, 
+            "to_state": "QCXWRQ", 
+            "transition_id": 46
+        }, 
+        "47": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "QCXWRQ", 
+            "to_outcome": 1, 
+            "to_state": "DXKABI", 
+            "transition_id": 47
+        }, 
+        "51": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 1, 
+            "from_state": "HQBJLK", 
+            "to_outcome": null, 
+            "to_state": "APAZLI", 
+            "transition_id": 51
+        }
+    }
+}

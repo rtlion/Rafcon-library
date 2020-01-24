@@ -1,0 +1,57 @@
+{
+    "__jsonqualname__": "rafcon.core.states.execution_state.ExecutionState", 
+    "description": "These are the supported names:\nexampleNames = [\"Amelia\", \"Angel\", \"Ava\", \"Charlie\", \"Charlotte\",\n    \"Mia\", \"Olivia\", \"Parker\", \"Sam\",\n    \"Hunter\", \"Jack\", \"Max\", \"Noah\", \"Oliver\",\"Thomas\",\n    \"William\", \"Michael\", \"Maria\", \"Kim\", \"Daniel\", \"Isabel\",\n    \"Alex\", \"John\", \"Barbara\", \"Kevin\", \"William\", \"Emma\",\"Sasha\",\n    \"Christoph\", \"Susan\", \"Joey\", \"Charlie\", \"Lee\", \"Bruce\", \"Toni\", \"Nicky\"]\n\n\n\nThese are the supported drinks:\nexampleDrinks = [\"water\", \"tea\",\"milk\", \"beer\",\n    \"lemonade\", \"chocolate\", \"juice\", \"whiskey\", \"coke\", 'cloak']", 
+    "income": {
+        "__jsonqualname__": "rafcon.core.state_elements.logical_port.Income"
+    }, 
+    "input_data_ports": {
+        "0": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_port.InputDataPort", 
+            "data_port_id": 0, 
+            "data_type": {
+                "__type__": "__builtin__.str"
+            }, 
+            "default_value": null, 
+            "name": "transcript"
+        }
+    }, 
+    "name": "extract name and drink", 
+    "outcomes": {
+        "-2": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "preempted", 
+            "outcome_id": -2
+        }, 
+        "-1": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "aborted", 
+            "outcome_id": -1
+        }, 
+        "0": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "success", 
+            "outcome_id": 0
+        }
+    }, 
+    "output_data_ports": {
+        "1": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_port.OutputDataPort", 
+            "data_port_id": 1, 
+            "data_type": {
+                "__type__": "__builtin__.list"
+            }, 
+            "default_value": null, 
+            "name": "names"
+        }, 
+        "2": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_port.OutputDataPort", 
+            "data_port_id": 2, 
+            "data_type": {
+                "__type__": "__builtin__.list"
+            }, 
+            "default_value": null, 
+            "name": "drinks"
+        }
+    }, 
+    "state_id": "SKAHMI"
+}

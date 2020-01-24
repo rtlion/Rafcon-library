@@ -1,0 +1,239 @@
+{
+    "__jsonqualname__": "rafcon.core.states.hierarchy_state.HierarchyState", 
+    "data_flows": {
+        "1": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_flow.DataFlow", 
+            "data_flow_id": 1, 
+            "from_key": 1, 
+            "from_state": "KJCESF", 
+            "to_key": 0, 
+            "to_state": "PBUFSS"
+        }, 
+        "2": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_flow.DataFlow", 
+            "data_flow_id": 2, 
+            "from_key": 1, 
+            "from_state": "SBNEVY", 
+            "to_key": 0, 
+            "to_state": "TTEDWR"
+        }, 
+        "3": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_flow.DataFlow", 
+            "data_flow_id": 3, 
+            "from_key": 0, 
+            "from_state": "IXMMZP", 
+            "to_key": 0, 
+            "to_state": "PBUFSS"
+        }, 
+        "5": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_flow.DataFlow", 
+            "data_flow_id": 5, 
+            "from_key": 1, 
+            "from_state": "SBNEVY", 
+            "to_key": 0, 
+            "to_state": "KJCESF"
+        }, 
+        "11": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_flow.DataFlow", 
+            "data_flow_id": 11, 
+            "from_key": 1, 
+            "from_state": "TTEDWR", 
+            "to_key": 0, 
+            "to_state": "KNQBXK"
+        }, 
+        "12": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_flow.DataFlow", 
+            "data_flow_id": 12, 
+            "from_key": 3, 
+            "from_state": "SBNEVY", 
+            "to_key": 0, 
+            "to_state": "JPLOPT"
+        }, 
+        "14": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_flow.DataFlow", 
+            "data_flow_id": 14, 
+            "from_key": 0, 
+            "from_state": "SBNEVY", 
+            "to_key": 2, 
+            "to_state": "JPLOPT"
+        }
+    }, 
+    "description": null, 
+    "income": {
+        "__jsonqualname__": "rafcon.core.state_elements.logical_port.Income"
+    }, 
+    "input_data_ports": {
+        "0": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_port.InputDataPort", 
+            "data_port_id": 0, 
+            "data_type": {
+                "__type__": "__builtin__.int"
+            }, 
+            "default_value": null, 
+            "name": "waypoint"
+        }, 
+        "1": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_port.InputDataPort", 
+            "data_port_id": 1, 
+            "data_type": {
+                "__type__": "__builtin__.str"
+            }, 
+            "default_value": "challenge", 
+            "name": "challenge"
+        }, 
+        "3": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_port.InputDataPort", 
+            "data_port_id": 3, 
+            "data_type": {
+                "__type__": "__builtin__.str"
+            }, 
+            "default_value": null, 
+            "name": "wpp file"
+        }
+    }, 
+    "name": "entering_arena", 
+    "outcomes": {
+        "-2": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "preempted", 
+            "outcome_id": -2
+        }, 
+        "-1": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "aborted", 
+            "outcome_id": -1
+        }, 
+        "0": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "success", 
+            "outcome_id": 0
+        }
+    }, 
+    "output_data_ports": {}, 
+    "scoped_variables": {
+        "2": {
+            "__jsonqualname__": "rafcon.core.state_elements.scope.ScopedVariable", 
+            "data_port_id": 2, 
+            "data_type": {
+                "__type__": "__builtin__.int"
+            }, 
+            "default_value": 10, 
+            "name": "timeout"
+        }
+    }, 
+    "state_id": "SBNEVY", 
+    "transitions": {
+        "1": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 1, 
+            "from_state": "PBUFSS", 
+            "to_outcome": null, 
+            "to_state": "WKXHLP", 
+            "transition_id": 1
+        }, 
+        "2": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "WKXHLP", 
+            "to_outcome": null, 
+            "to_state": "JMJANQ", 
+            "transition_id": 2
+        }, 
+        "5": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "IXMMZP", 
+            "to_outcome": null, 
+            "to_state": "PBUFSS", 
+            "transition_id": 5
+        }, 
+        "6": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "JMJANQ", 
+            "to_outcome": null, 
+            "to_state": "IXMMZP", 
+            "transition_id": 6
+        }, 
+        "8": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "OUZSXU", 
+            "to_outcome": null, 
+            "to_state": "JPLOPT", 
+            "transition_id": 8
+        }, 
+        "9": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 1, 
+            "from_state": "OUZSXU", 
+            "to_outcome": 0, 
+            "to_state": "SBNEVY", 
+            "transition_id": 9
+        }, 
+        "10": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": null, 
+            "from_state": null, 
+            "to_outcome": null, 
+            "to_state": "OUZSXU", 
+            "transition_id": 10
+        }, 
+        "15": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "TTEDWR", 
+            "to_outcome": null, 
+            "to_state": "KNQBXK", 
+            "transition_id": 15
+        }, 
+        "16": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "KNQBXK", 
+            "to_outcome": 0, 
+            "to_state": "SBNEVY", 
+            "transition_id": 16
+        }, 
+        "18": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "JPLOPT", 
+            "to_outcome": null, 
+            "to_state": "KJCESF", 
+            "transition_id": 18
+        }, 
+        "19": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "KJCESF", 
+            "to_outcome": null, 
+            "to_state": "PBUFSS", 
+            "transition_id": 19
+        }, 
+        "20": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "PBUFSS", 
+            "to_outcome": null, 
+            "to_state": "TTEDWR", 
+            "transition_id": 20
+        }, 
+        "26": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": -1, 
+            "from_state": "JPLOPT", 
+            "to_outcome": -1, 
+            "to_state": "SBNEVY", 
+            "transition_id": 26
+        }, 
+        "27": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": -2, 
+            "from_state": "JPLOPT", 
+            "to_outcome": -2, 
+            "to_state": "SBNEVY", 
+            "transition_id": 27
+        }
+    }
+}

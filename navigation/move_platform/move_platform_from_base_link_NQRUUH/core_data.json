@@ -1,0 +1,242 @@
+{
+    "__jsonqualname__": "rafcon.core.states.hierarchy_state.HierarchyState", 
+    "data_flows": {
+        "8": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_flow.DataFlow", 
+            "data_flow_id": 8, 
+            "from_key": 3, 
+            "from_state": "EEIATM", 
+            "to_key": 0, 
+            "to_state": "AZGRPE"
+        }, 
+        "10": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_flow.DataFlow", 
+            "data_flow_id": 10, 
+            "from_key": 0, 
+            "from_state": "NQRUUH", 
+            "to_key": 2, 
+            "to_state": "EEIATM"
+        }, 
+        "11": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_flow.DataFlow", 
+            "data_flow_id": 11, 
+            "from_key": 1, 
+            "from_state": "NQRUUH", 
+            "to_key": 1, 
+            "to_state": "EEIATM"
+        }, 
+        "12": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_flow.DataFlow", 
+            "data_flow_id": 12, 
+            "from_key": 2, 
+            "from_state": "NQRUUH", 
+            "to_key": 3, 
+            "to_state": "AZGRPE"
+        }, 
+        "13": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_flow.DataFlow", 
+            "data_flow_id": 13, 
+            "from_key": 3, 
+            "from_state": "NQRUUH", 
+            "to_key": 2, 
+            "to_state": "AZGRPE"
+        }, 
+        "14": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_flow.DataFlow", 
+            "data_flow_id": 14, 
+            "from_key": 1, 
+            "from_state": "AZGRPE", 
+            "to_key": 4, 
+            "to_state": "NQRUUH"
+        }
+    }, 
+    "description": null, 
+    "income": {
+        "__jsonqualname__": "rafcon.core.state_elements.logical_port.Income"
+    }, 
+    "input_data_ports": {
+        "0": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_port.InputDataPort", 
+            "data_port_id": 0, 
+            "data_type": {
+                "__type__": "__builtin__.str"
+            }, 
+            "default_value": "forward", 
+            "name": "direction"
+        }, 
+        "1": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_port.InputDataPort", 
+            "data_port_id": 1, 
+            "data_type": {
+                "__type__": "__builtin__.float"
+            }, 
+            "default_value": 300.0, 
+            "name": "moveAmountInCM"
+        }, 
+        "2": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_port.InputDataPort", 
+            "data_port_id": 2, 
+            "data_type": {
+                "__type__": "__builtin__.int"
+            }, 
+            "default_value": 10, 
+            "name": "timeout_wait_for_result"
+        }, 
+        "3": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_port.InputDataPort", 
+            "data_port_id": 3, 
+            "data_type": {
+                "__type__": "__builtin__.int"
+            }, 
+            "default_value": 5, 
+            "name": "timeout_wait_for_server"
+        }
+    }, 
+    "name": "move platform from base link", 
+    "outcomes": {
+        "-2": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "preempted", 
+            "outcome_id": -2
+        }, 
+        "-1": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "aborted", 
+            "outcome_id": -1
+        }, 
+        "0": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "success", 
+            "outcome_id": 0
+        }, 
+        "1": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "unable", 
+            "outcome_id": 1
+        }, 
+        "2": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "timeout", 
+            "outcome_id": 2
+        }
+    }, 
+    "output_data_ports": {
+        "4": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_port.OutputDataPort", 
+            "data_port_id": 4, 
+            "data_type": {
+                "__type__": "__builtin__.object"
+            }, 
+            "default_value": null, 
+            "name": "poseStamped"
+        }
+    }, 
+    "scoped_variables": {}, 
+    "state_id": "NQRUUH", 
+    "transitions": {
+        "1": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 4, 
+            "from_state": "AZGRPE", 
+            "to_outcome": 1, 
+            "to_state": "NQRUUH", 
+            "transition_id": 1
+        }, 
+        "2": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 1, 
+            "from_state": "AZGRPE", 
+            "to_outcome": 2, 
+            "to_state": "NQRUUH", 
+            "transition_id": 2
+        }, 
+        "3": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 2, 
+            "from_state": "AZGRPE", 
+            "to_outcome": 2, 
+            "to_state": "NQRUUH", 
+            "transition_id": 3
+        }, 
+        "4": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 5, 
+            "from_state": "AZGRPE", 
+            "to_outcome": 1, 
+            "to_state": "NQRUUH", 
+            "transition_id": 4
+        }, 
+        "5": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 6, 
+            "from_state": "AZGRPE", 
+            "to_outcome": 2, 
+            "to_state": "NQRUUH", 
+            "transition_id": 5
+        }, 
+        "6": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "AZGRPE", 
+            "to_outcome": 2, 
+            "to_state": "NQRUUH", 
+            "transition_id": 6
+        }, 
+        "7": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 7, 
+            "from_state": "AZGRPE", 
+            "to_outcome": 2, 
+            "to_state": "NQRUUH", 
+            "transition_id": 7
+        }, 
+        "8": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 8, 
+            "from_state": "AZGRPE", 
+            "to_outcome": 2, 
+            "to_state": "NQRUUH", 
+            "transition_id": 8
+        }, 
+        "9": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 9, 
+            "from_state": "AZGRPE", 
+            "to_outcome": 2, 
+            "to_state": "NQRUUH", 
+            "transition_id": 9
+        }, 
+        "40": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "EEIATM", 
+            "to_outcome": null, 
+            "to_state": "AZGRPE", 
+            "transition_id": 40
+        }, 
+        "41": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": null, 
+            "from_state": null, 
+            "to_outcome": null, 
+            "to_state": "EEIATM", 
+            "transition_id": 41
+        }, 
+        "42": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 3, 
+            "from_state": "AZGRPE", 
+            "to_outcome": 0, 
+            "to_state": "NQRUUH", 
+            "transition_id": 42
+        }, 
+        "43": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 1, 
+            "from_state": "EEIATM", 
+            "to_outcome": -2, 
+            "to_state": "NQRUUH", 
+            "transition_id": 43
+        }
+    }
+}

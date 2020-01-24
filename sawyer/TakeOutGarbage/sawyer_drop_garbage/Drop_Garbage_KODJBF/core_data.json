@@ -1,0 +1,120 @@
+{
+    "__jsonqualname__": "rafcon.core.states.hierarchy_state.HierarchyState", 
+    "data_flows": {}, 
+    "description": "State Machine to drop off the garbage!\n\nThe garbage has to be in the Hand already.\n\nTO BE IMPROVED:\n- Check if the garbage is the really been dropped off", 
+    "income": {
+        "__jsonqualname__": "rafcon.core.state_elements.logical_port.Income"
+    }, 
+    "input_data_ports": {}, 
+    "name": "Drop Garbage", 
+    "outcomes": {
+        "-2": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "preempted", 
+            "outcome_id": -2
+        }, 
+        "-1": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "aborted", 
+            "outcome_id": -1
+        }, 
+        "0": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "success", 
+            "outcome_id": 0
+        }
+    }, 
+    "output_data_ports": {}, 
+    "scoped_variables": {}, 
+    "state_id": "KODJBF", 
+    "transitions": {
+        "1": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": null, 
+            "from_state": null, 
+            "to_outcome": null, 
+            "to_state": "ZRNDSB", 
+            "transition_id": 1
+        }, 
+        "40": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 2, 
+            "from_state": "VSWWAT", 
+            "to_outcome": null, 
+            "to_state": "VSWWAT", 
+            "transition_id": 40
+        }, 
+        "41": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 1, 
+            "from_state": "VSWWAT", 
+            "to_outcome": null, 
+            "to_state": "VSWWAT", 
+            "transition_id": 41
+        }, 
+        "42": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "BHQMBT", 
+            "to_outcome": null, 
+            "to_state": "HYFCKB", 
+            "transition_id": 42
+        }, 
+        "43": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 1, 
+            "from_state": "BHQMBT", 
+            "to_outcome": null, 
+            "to_state": "HYFCKB", 
+            "transition_id": 43
+        }, 
+        "44": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "HYFCKB", 
+            "to_outcome": null, 
+            "to_state": "FJLNRZ", 
+            "transition_id": 44
+        }, 
+        "55": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "VSWWAT", 
+            "to_outcome": null, 
+            "to_state": "ETWUES", 
+            "transition_id": 55
+        }, 
+        "60": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "FJLNRZ", 
+            "to_outcome": 0, 
+            "to_state": "KODJBF", 
+            "transition_id": 60
+        }, 
+        "63": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "ETWUES", 
+            "to_outcome": null, 
+            "to_state": "ERCVJL", 
+            "transition_id": 63
+        }, 
+        "64": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "ERCVJL", 
+            "to_outcome": null, 
+            "to_state": "BHQMBT", 
+            "transition_id": 64
+        }, 
+        "66": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "ZRNDSB", 
+            "to_outcome": null, 
+            "to_state": "VSWWAT", 
+            "transition_id": 66
+        }
+    }
+}

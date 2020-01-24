@@ -1,0 +1,117 @@
+{
+    "__jsonqualname__": "rafcon.core.states.hierarchy_state.HierarchyState", 
+    "data_flows": {}, 
+    "description": "The person should stand in front of the roboto and start waving. Then we wait 2 seconds and check again if followMe found the guy again or not.", 
+    "income": {
+        "__jsonqualname__": "rafcon.core.state_elements.logical_port.Income"
+    }, 
+    "input_data_ports": {}, 
+    "name": "followMe_wave_detection", 
+    "outcomes": {
+        "-2": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "preempted", 
+            "outcome_id": -2
+        }, 
+        "-1": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "aborted", 
+            "outcome_id": -1
+        }, 
+        "0": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "foundPerson", 
+            "outcome_id": 0
+        }, 
+        "1": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "lostPerson", 
+            "outcome_id": 1
+        }
+    }, 
+    "output_data_ports": {}, 
+    "scoped_variables": {}, 
+    "state_id": "VKMQGR", 
+    "transitions": {
+        "31": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": null, 
+            "from_state": null, 
+            "to_outcome": null, 
+            "to_state": "OCMVKP", 
+            "transition_id": 31
+        }, 
+        "32": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "OCMVKP", 
+            "to_outcome": null, 
+            "to_state": "FJIHTV", 
+            "transition_id": 32
+        }, 
+        "33": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "FJIHTV", 
+            "to_outcome": null, 
+            "to_state": "VCCHZW", 
+            "transition_id": 33
+        }, 
+        "34": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "VCCHZW", 
+            "to_outcome": null, 
+            "to_state": "GPVDOF", 
+            "transition_id": 34
+        }, 
+        "35": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 1, 
+            "from_state": "GPVDOF", 
+            "to_outcome": null, 
+            "to_state": "LADOGT", 
+            "transition_id": 35
+        }, 
+        "36": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "LADOGT", 
+            "to_outcome": null, 
+            "to_state": "SHTWUB", 
+            "transition_id": 36
+        }, 
+        "37": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "SHTWUB", 
+            "to_outcome": 0, 
+            "to_state": "VKMQGR", 
+            "transition_id": 37
+        }, 
+        "38": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "GPVDOF", 
+            "to_outcome": null, 
+            "to_state": "KSECFJ", 
+            "transition_id": 38
+        }, 
+        "39": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "KSECFJ", 
+            "to_outcome": null, 
+            "to_state": "XGFYLR", 
+            "transition_id": 39
+        }, 
+        "50": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "XGFYLR", 
+            "to_outcome": 1, 
+            "to_state": "VKMQGR", 
+            "transition_id": 50
+        }
+    }
+}
